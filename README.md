@@ -1,2 +1,2 @@
 # flutter_games_demo
-Fluent game practice
+Flutter game practice
