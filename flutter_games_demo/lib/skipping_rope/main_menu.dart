@@ -3,14 +3,12 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter_games_demo/public_widget/back_button_widget.dart';
 
-import 'aircraft_wars_game.dart';
-import 'information.dart';
+import 'skipping_rope_game.dart';
 
 class MainMenu extends StatelessWidget {
-  // 为该覆盖标识的唯一属性。
-  static const id = 'MainMenu';
+  static const id = 'SkippingRopeMainMenu';
 
-  final AircraftWarsGame gameRef;
+  final SkippingRopeGame gameRef;
 
   const MainMenu(this.gameRef, {Key? key}) : super(key: key);
 
@@ -30,7 +28,7 @@ class MainMenu extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text(
-                    '飞机大战',
+                    '跳绳',
                     style: TextStyle(
                       fontSize: 50,
                       color: Colors.white,
@@ -39,9 +37,8 @@ class MainMenu extends StatelessWidget {
                   const SizedBox(height: 10),
                   ElevatedButton(
                     onPressed: () {
-                      gameRef.startGamePlay();
-                      gameRef.overlays.remove(MainMenu.id);
-                      gameRef.overlays.add(Information.id);
+                      // gameRef.startGamePlay();
+                      // gameRef.overlays.remove(MainMenu.id);
                     },
                     child: const Text(
                       '开始',

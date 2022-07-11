@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'aircraft_wars/aircraft_wars_start.dart';
 import 'public_widget/splash_screen.dart';
+import 'skipping_rope/skipping_rope_start.dart';
 
 Future<void> main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,6 +37,7 @@ class _MainPageState extends State<MainPage> {
       body: ListView(
         children: [
           to('飞机大战', 'aircraft_wars/enemy0.png', const AircraftWarsStart()),
+          // to('跳绳', 'aircraft_wars/enemy0.png', const SkippingRopeStart()),
         ],
       ),
     );
